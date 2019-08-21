@@ -1,6 +1,15 @@
 <html>
   <head>
     <title>Capabilities</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -8,38 +17,57 @@
     />
   </head>
   <body>
-    <div class="box">
-      <img class="boxImage" src="../../assets/test.png" />
-      <div class="text">
-        <h1>TEST</h1>
+    <!----Carousal for header goes here-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../assets/carousalBackground1.jpg" />
+          <div class="carousel-caption">
+            <h3>Dhairya to add some heading</h3>
+            <p>Dhairya to add some content</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/carousalBackground2.jpg" />
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/carousalBackground3.jpg" />
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
+    <!-- Option box goes here
+    <div class="options">
+      <div class="box">
+        <img class="boxImage" src="../../assets/test.png" />
+        <div class="text">
+          <h1>TEST</h1>
+        </div>
+      </div>
+      <div class="gearBox">
+        <div class="imageAlignment_smallClock">
           <img
-            src="../../assets/test.png"
-            alt="Avatar"
-            style="width:300px;height:300px;"
+            class="imageRotate_smallClock"
+            src="../../assets/gearImage.png"
           />
         </div>
-        <div class="flip-card-back">
-          <h1>Front End</h1>
-          <a>Architect & Engineer</a>
-          <a>We love that guy</a>
+        <div class="imageAlignment_AntiClock">
+          <img class="imageRotate_AntiClock" src="../../assets/gearImage.png" />
+        </div>
+        <div class="imageAlignment_clock">
+          <img class="imageRotate_clock" src="../../assets/gearImage.png" />
         </div>
       </div>
-    </div>
-    <div class="gearBox">
-      <div class="imageAlignment_smallClock">
-        <img class="imageRotate_smallClock" src="../../assets/gearImage.png" />
-      </div>
-      <div class="imageAlignment_AntiClock">
-        <img class="imageRotate_AntiClock" src="../../assets/gearImage.png" />
-      </div>
-      <div class="imageAlignment_clock">
-        <img class="imageRotate_clock" src="../../assets/gearImage.png" />
-      </div>
-    </div>
+    </div> -->
   </body>
 </html>

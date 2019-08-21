@@ -131,6 +131,11 @@ body {
   animation: spinAntiClock 30s linear infinite;
 }
 
+.carousel-inner img {
+  width: 100%;
+  height: 70%;
+}
+
 @-moz-keyframes spin {
   100% {
     -moz-transform: rotate(-360deg);
